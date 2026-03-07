@@ -24,29 +24,6 @@ html {
   font-style: normal;
 }
 
-a.lb {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-a.lb:hover {
-  color: #f3d7ba;
-  text-decoration: none;
-}
-a.li {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-a.li:hover {
-  color: #f3d7ba;
-  text-decoration: none;
-}
-
 /*Inicio de Perfil Profesional*/
 .perfil-profesional {
   background-color: black;
@@ -56,6 +33,7 @@ a.li:hover {
   flex-direction: row;
   justify-content: space-between;
   padding: 50px 8%;
+  gap: 10px;
 }
 
 /*Seccion de Contactos*/
