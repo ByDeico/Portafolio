@@ -30,26 +30,26 @@ html {
   position: absolute;
   color: white;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .texto-encima.dg1 {
-  font-size: 12px;
+  font-size: 0.75rem;
   bottom: 30px;
   left: 20px;
 }
 .texto-encima.dg2 {
-  font-size: 14px;
+  font-size: 0.875rem;
   bottom: 50px;
   left: 20px;
 }
 .texto-encima.dg3 {
-  font-size: 14px;
+  font-size: 0.875rem;
   bottom: 20px;
   right: 20px;
   transition: font-size 0.1s ease;
 }
 .texto-encima.dg3:hover {
-  font-size: 15px;
+  font-size: 0.9375rem;
   transition: font-size 0.1s ease;
 }
 a.lb {
@@ -64,13 +64,13 @@ a.lb:hover {
   text-decoration: none;
 }
 .texto-encima.dg4 {
-  font-size: 14px;
+  font-size: 0.875rem;
   bottom: 50px;
   right: 20px;
   transition: font-size 0.1s ease;
 }
 .texto-encima.dg4:hover {
-  font-size: 15px;
+  font-size: 0.9375rem;
   transition: font-size 0.1s ease;
 }
 a.li {
@@ -101,7 +101,7 @@ a.li:hover {
 .stitulos {
   color: white;
   font-family: "f-bebas";
-  font-size: 100px;
+  font-size: 6.25rem;
   align-items: center;
   line-height: 0.8;
   width: min-content;
@@ -109,7 +109,7 @@ a.li:hover {
 .infopp {
   color: white;
   font-family: "f-archive";
-  font-size: 12px;
+  font-size: 0.75rem;
   width: 100%;
   max-width: 500px;
   align-items: center;
@@ -127,12 +127,12 @@ a.li:hover {
 }
 .titulos {
   color: white;
-  font-size: 140px;
+  font-size: 8.75rem;
   font-family: "f-bebas";
 }
 .puntico {
   color: white;
-  font-size: 74px;
+  font-size: 4.625rem;
   font-family: "f-bebas";
   height: 54.5px;
 }
@@ -149,7 +149,7 @@ a.li:hover {
 }
 .titulos2 {
   color: white;
-  font-size: 100px;
+  font-size: 6.25rem;
   font-family: "f-bebas";
 }
 .msjfinal {
@@ -163,7 +163,7 @@ a.li:hover {
 }
 .msjfinal {
   color: white;
-  font-size: 70px;
+  font-size: 4.375rem;
   font-family: "f-bebas";
 }
 
