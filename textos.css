@@ -80,16 +80,15 @@
   align-items: center;
   gap: 5px;
 }
-.titulos {
+.titulo h3 {
   color: white;
   font-size: 8.75rem;
   font-family: "f-bebas";
 }
-.puntico {
-  color: white;
-  font-size: 4.625rem;
-  font-family: "f-bebas";
-  height: 54.5px;
+.titulo h3::after {
+  content: ".";
+  font-size: 6.75rem;
+  margin-left: 5px;
 }
 /*Titulo de Gracias*/
 .titulos2 {
