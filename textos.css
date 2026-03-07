@@ -1,0 +1,41 @@
+.Hero {
+  font-size: 4rem;
+}
+
+.Emphasis {
+  font-size: 2rem;
+}
+
+.titulos {
+  font-size: 1.5rem;
+}
+
+.parrafo {
+  font-size: 1rem;
+}
+
+/*Texto dentro de imagen*/
+.texto-encima {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: 0.75rem;
+  transition: font-size 0.1s ease;
+}
+.texto-encima.dg1 {
+  bottom: 30px;
+  left: 20px;
+}
+.texto-encima.dg2 {
+  font-size: 0.875rem;
+  bottom: 50px;
+  left: 20px;
+}
+.texto-encima.dg3 {
+  font-size: 0.875rem;
+  bottom: 20px;
+  right: 20px;
+}
+.texto-encima.dg3:hover {
+  font-size: 0.9375rem;
+}

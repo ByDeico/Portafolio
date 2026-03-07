@@ -24,34 +24,6 @@ html {
   font-style: normal;
 }
 
-/*Codigo Portada*/
-
-.texto-encima {
-  position: absolute;
-  color: white;
-  text-align: center;
-  font-size: 0.75rem;
-}
-.texto-encima.dg1 {
-  font-size: 0.75rem;
-  bottom: 30px;
-  left: 20px;
-}
-.texto-encima.dg2 {
-  font-size: 0.875rem;
-  bottom: 50px;
-  left: 20px;
-}
-.texto-encima.dg3 {
-  font-size: 0.875rem;
-  bottom: 20px;
-  right: 20px;
-  transition: font-size 0.1s ease;
-}
-.texto-encima.dg3:hover {
-  font-size: 0.9375rem;
-  transition: font-size 0.1s ease;
-}
 a.lb {
   display: flex;
   align-items: center;
