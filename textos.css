@@ -39,3 +39,86 @@
 .texto-encima.dg3:hover {
   font-size: 0.9375rem;
 }
+.texto-encima.dg4 {
+  font-size: 0.875rem;
+  bottom: 50px;
+  right: 20px;
+  transition: font-size 0.1s ease;
+}
+.texto-encima.dg4:hover {
+  font-size: 0.9375rem;
+  transition: font-size 0.1s ease;
+}
+/*About Me*/
+.infop {
+  flex-direction: column;
+}
+.stitulos {
+  color: white;
+  font-family: "f-bebas";
+  font-size: 6.25rem;
+  align-items: center;
+  line-height: 0.8;
+  width: min-content;
+}
+.infopp {
+  color: white;
+  font-family: "f-archive";
+  font-size: 0.75rem;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+}
+
+/*Codigo de Titulos*/
+.titulo {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.titulos {
+  color: white;
+  font-size: 8.75rem;
+  font-family: "f-bebas";
+}
+.puntico {
+  color: white;
+  font-size: 4.625rem;
+  font-family: "f-bebas";
+  height: 54.5px;
+}
+/*Titulo de Gracias*/
+.titulos2 {
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.titulos2 {
+  color: white;
+  font-size: 6.25rem;
+  font-family: "f-bebas";
+}
+.msjfinal {
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.msjfinal {
+  color: white;
+  font-size: 4.375rem;
+  font-family: "f-bebas";
+}
+
+/*Seccion de Contactos*/
