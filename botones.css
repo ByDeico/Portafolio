@@ -1,4 +1,4 @@
-/*Boton de Sobre Mi*/
+/*Boton de Menu*/
 .seccion-botones {
   display: flex;
   justify-content: center;
@@ -15,18 +15,42 @@
   color: black;
   background-color: white;
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   text-align: center;
   border-radius: 100px;
   font-family: "f-bebas";
-  font-size: 2rem;
-  padding: 5px 12px;
+  font-size: 3rem;
+  padding: 5px 24px;
   text-decoration: none;
-}
-.seccion-botones div a:hover {
-  font-size: 32px;
-  background-color: #f3d7ba;
   transition:
     font-size 0.3s ease,
     background-color 0.5s;
+}
+.seccion-botones div a:hover {
+  font-size: 3.2rem;
+  background-color: #f3d7ba;
+}
+
+/*Botones Links*/
+a.lb {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a.lb:hover {
+  color: #f3d7ba;
+  text-decoration: none;
+}
+a.li {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a.li:hover {
+  color: #f3d7ba;
+  text-decoration: none;
 }

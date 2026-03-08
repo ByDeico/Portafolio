@@ -56,7 +56,7 @@
 .stitulos {
   color: white;
   font-family: "f-bebas";
-  font-size: 6.25rem;
+  font-size: 7.25rem;
   align-items: center;
   line-height: 0.8;
   width: min-content;
@@ -64,7 +64,7 @@
 .infopp {
   color: white;
   font-family: "f-archive";
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   width: 100%;
   max-width: 500px;
   align-items: center;
