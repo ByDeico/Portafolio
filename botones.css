@@ -1,50 +1,69 @@
-/*Boton de Menu*/
+/* 1. Contenedor principal */
 .seccion-botones {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.seccion-botones > div {
+.mask-btn {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  background-color: #111;
 }
-.seccion-botones div a {
-  color: black;
-  background: linear-gradient(white);
+
+/* 1. ESTADO BASE: Solo blanco, sin rastro del degradado */
+.botonb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 55px;
-  text-align: center;
+
+  background-color: white; /* Blanco sólido absoluto */
+  color: black;
+
   border-radius: 100px;
-  font-family: "f-bebas";
+  font-family: "f-bebas", sans-serif;
   font-size: 3rem;
-  padding: 5px 24px;
   text-decoration: none;
-  transition:
-    all 0.3s ease,
-    background-color 0.5s;
+  transition: all 0.3s ease;
+
+  /* Quitamos el background-image de aquí para que no exista hasta el hover */
 }
-.seccion-botones div a:hover {
-  transform: scale(1.1);
-  background: linear-gradient(30deg, #f8d877, #eb9c70, #df636a, #d32563);
+
+/* 2. EL HOVER: Aquí declaramos el degradado y su posición */
+.botonb:hover {
+  transform: scale(1.05);
+  color: white;
+
+  /* El degradado solo nace aquí */
+  background-image: linear-gradient(30deg, #f8d877, #eb9c70, #df636a, #d32563);
+  background-size: 620px 181px; /* El tamaño de tu "lienzo" total */
+  background-repeat: no-repeat;
 }
-/*Prueba*/
-.mask-btn {
-  background: var(--bg-gradient);
-  background-size: 100% 100%;
-  background-attachment: local;
-}
-.mask-btn:nth-child(1) {
+
+/* 3. POSICIONAMIENTO INDIVIDUAL (Solo se activa al hacer hover) */
+/* Columna 1 */
+.mask-btn:nth-child(1) .botonb:nth-child(1):hover {
   background-position: 0% 0%;
 }
-.mask-btn:nth-child(2) {
-  background-position: 20% 0%;
+.mask-btn:nth-child(1) .botonb:nth-child(2):hover {
+  background-position: 0% 50%;
 }
-.mask-btn:nth-child(3) {
-  background-position: 40% 0%;
+.mask-btn:nth-child(1) .botonb:nth-child(3):hover {
+  background-position: 0% 100%;
+}
+
+/* Columna 2 */
+.mask-btn:nth-child(2) .botonb:nth-child(1):hover {
+  background-position: 100% 0%;
+}
+.mask-btn:nth-child(2) .botonb:nth-child(2):hover {
+  background-position: 100% 50%;
+}
+.mask-btn:nth-child(2) .botonb:nth-child(3):hover {
+  background-position: 100% 100%;
 }
 
 /*Botones Links*/
