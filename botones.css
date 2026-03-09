@@ -6,16 +6,17 @@
   gap: 20px;
 }
 
-.seccion-botones div {
+.seccion-botones > div {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
+  background-color: #111;
 }
 .seccion-botones div a {
   color: black;
-  background-color: white;
-  width: 100%;
-  max-width: 300px;
+  background: linear-gradient(white);
+  width: 300px;
+  height: 55px;
   text-align: center;
   border-radius: 100px;
   font-family: "f-bebas";
@@ -23,34 +24,49 @@
   padding: 5px 24px;
   text-decoration: none;
   transition:
-    font-size 0.3s ease,
+    all 0.3s ease,
     background-color 0.5s;
 }
 .seccion-botones div a:hover {
-  font-size: 3.2rem;
-  background-color: #f3d7ba;
+  transform: scale(1.1);
+  background: linear-gradient(30deg, #f8d877, #eb9c70, #df636a, #d32563);
+}
+/*Prueba*/
+.mask-btn {
+  background: var(--bg-gradient);
+  background-size: 100% 100%;
+  background-attachment: local;
+}
+.mask-btn:nth-child(1) {
+  background-position: 0% 0%;
+}
+.mask-btn:nth-child(2) {
+  background-position: 20% 0%;
+}
+.mask-btn:nth-child(3) {
+  background-position: 40% 0%;
 }
 
 /*Botones Links*/
 a.lb {
   display: flex;
   align-items: center;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 a.lb:hover {
-  color: #f3d7ba;
+  color: #d32563;
   text-decoration: none;
 }
 a.li {
   display: flex;
   align-items: center;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 a.li:hover {
-  color: #f3d7ba;
+  color: #d32563;
   text-decoration: none;
 }

@@ -1,0 +1,2 @@
+Colores Pricipales
+#f8d877, #eb9c70, #df636a, #d32563

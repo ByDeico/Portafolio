@@ -7,6 +7,10 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  /* Definimos el degradado una sola vez para que sea fácil de cambiar*/
+  --bg-gradient: linear-gradient(135deg, #f8d877, #eb9c70, #df636a, #d32563);
+}
 
 /*Font de Archive Para Info*/
 @font-face {
