@@ -71,6 +71,12 @@ div.contacto div.firma {
   align-items: center;
   justify-content: center;
   color: white;
+  text-align: center;
+}
+
+div.contacto div.texto {
+  column-count: 2;
+  column-gap: 20px;
 }
 
 div.contacto div.logo {
