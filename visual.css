@@ -41,3 +41,47 @@ html {
 }
 
 /*Seccion de Contactos*/
+div.contacto {
+  background: black;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 8%;
+  gap: 10px;
+}
+
+div.contacto div.iconos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+div.contacto div.iconos svg {
+  fill: white;
+  text-decoration: none;
+}
+
+div.contacto div.texto,
+div.contacto div.firma {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+div.contacto div.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.contacto div.logo svg {
+  width: 100px;
+  height: 100px;
+  fill: white;
+}
