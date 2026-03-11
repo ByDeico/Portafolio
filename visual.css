@@ -74,9 +74,8 @@ div.contacto div.firma {
   text-align: center;
 }
 
-div.contacto div.texto {
-  column-count: 2;
-  column-gap: 20px;
+div.contacto div.texto p {
+  width: 50%;
 }
 
 div.contacto div.logo {
