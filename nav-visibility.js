@@ -1,24 +1,36 @@
 (() => {
   const nav = document.querySelector("body > nav");
-  if (!nav) return;
+  if (!nav) {
+    console.error("No se encontró el elemento <nav>.");
+    return;
+  }
 
-  const enfoqueHeading = Array.from(document.querySelectorAll("h4")).find(
-    (heading) => heading.textContent && heading.textContent.trim().toLowerCase() === "mi enfoque"
-  );
+  const triggerDiv = document.querySelector(".perfil-profesional");
 
-  const triggerDiv = enfoqueHeading
-    ? enfoqueHeading.closest("div")
-    : document.querySelector(".infop");
-
-  // If the trigger section is missing, keep nav visible to avoid locking it hidden.
   if (!triggerDiv) {
+    console.warn(
+      "No se encontró el elemento con la clase 'perfil-profesional'. Manteniendo la barra visible."
+    );
     nav.classList.remove("nav-hidden");
     return;
   }
 
   const updateNavVisibility = () => {
-    const triggerBottom = triggerDiv.getBoundingClientRect().bottom + window.scrollY;
+    const triggerRect = triggerDiv.getBoundingClientRect();
+    const triggerBottom = triggerRect.bottom + window.scrollY;
     const shouldShow = window.scrollY > triggerBottom;
+
+    console.log(
+      "triggerRect:",
+      triggerRect,
+      "triggerBottom:",
+      triggerBottom,
+      "scrollY:",
+      window.scrollY,
+      "shouldShow:",
+      shouldShow
+    );
+
     nav.classList.toggle("nav-hidden", !shouldShow);
   };
 
@@ -36,5 +48,6 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", updateNavVisibility);
 
+  console.info("Iniciando visibilidad de navegación.");
   updateNavVisibility();
 })();
