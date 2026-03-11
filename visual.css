@@ -42,7 +42,7 @@ html {
 
 /*Seccion de Contactos*/
 div.contacto {
-  background: black;
+  background: white;
   height: fit-content;
   width: 100%;
   display: flex;
@@ -60,7 +60,7 @@ div.contacto div.iconos {
 }
 
 div.contacto div.iconos svg {
-  fill: white;
+  fill: black;
   text-decoration: none;
 }
 
@@ -70,7 +70,7 @@ div.contacto div.firma {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -88,5 +88,5 @@ div.contacto div.logo {
 div.contacto div.logo svg {
   width: 100px;
   height: 100px;
-  fill: white;
+  fill: black;
 }
