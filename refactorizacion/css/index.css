@@ -1,3 +1,19 @@
+/*Font de Archive Para Info*/
+@font-face {
+  font-family: "f-archive";
+  src: url("../fonts/Archivo-VariableFont_wdth\,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*Font de Bebas Neue Para Titulos*/
+@font-face {
+  font-family: "f-bebas";
+  src: url("../fonts/bebasneue/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0px;
   border: 0px;
@@ -17,21 +33,20 @@ html {
   --fs-botones-portada: 0.875rem;
 
   --fs-parrafos: 1rem;
+  --fs-botones: 2.5rem;
   --fs-botones-hover: 0.975rem;
 }
 
-/*Font de Archive Para Info*/
-@font-face {
-  font-family: "f-archive";
-  src: url("../fonts/Archivo-VariableFont_wdth\,wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+/*Estilos Generales*/
+div.imagen {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-/*Font de Bebas Neue Para Titulos*/
-@font-face {
-  font-family: "f-bebas";
-  src: url("../fonts/bebasneue/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+div.seccion {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: black;
+  color: white;
 }

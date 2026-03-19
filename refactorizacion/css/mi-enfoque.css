@@ -1,0 +1,56 @@
+/*texto*/
+div.mi-enfoque {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px 0px; /* 20px entre filas (cuando hace wrap), 40px entre columnas */
+}
+
+div.mi-enfoque .texto {
+  display: flex;
+  flex-direction: column;
+}
+div.mi-enfoque .texto h4 {
+  font-family: "f-bebas", sans-serif;
+  font-size: var(--fs-titulo);
+  font-weight: bold;
+}
+div.mi-enfoque .texto p {
+  font-size: var(--fs-parrafos);
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/*botones*/
+div.mi-enfoque div.botones {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+div.mi-enfoque div.botones div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div.mi-enfoque div.botones a {
+  font-family: "f-bebas", sans-serif;
+  font-size: var(--fs-botones);
+  text-align: center;
+  text-decoration: none;
+
+  color: black;
+  background: linear-gradient(white);
+  padding: 0px 40px;
+  border-radius: 100px;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+div.mi-enfoque div.botones a:hover {
+  transform: scale(1.05);
+  color: white;
+  background: var(--bg-gradient);
+}
