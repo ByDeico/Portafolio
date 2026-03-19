@@ -5,22 +5,12 @@ div.mi-enfoque {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px 0px; /* 20px entre filas (cuando hace wrap), 40px entre columnas */
+  padding: 30px 30px;
+  gap: 20px 0px;
 }
 
-div.mi-enfoque .texto {
-  display: flex;
-  flex-direction: column;
-}
-div.mi-enfoque .texto h4 {
-  font-family: "f-bebas", sans-serif;
-  font-size: var(--fs-titulo);
-  font-weight: bold;
-}
-div.mi-enfoque .texto p {
-  font-size: var(--fs-parrafos);
-  line-height: 1.5;
-  max-width: 600px;
+div.mi-enfoque h4 {
+  line-height: 0.8;
 }
 
 /*botones*/
@@ -46,11 +36,31 @@ div.mi-enfoque div.botones a {
   background: linear-gradient(white);
   padding: 0px 40px;
   border-radius: 100px;
-  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.2s ease,
+    color 0.5s ease,
+    background-color 0.5s ease;
 }
 
 div.mi-enfoque div.botones a:hover {
   transform: scale(1.05);
   color: white;
   background: var(--bg-gradient);
+}
+
+@media screen and (max-width: 768px) {
+  div.mi-enfoque .texto h4 {
+    font-size: 5rem;
+  }
+  div.mi-enfoque .texto p {
+    font-size: 0.8rem;
+  }
+  div.mi-enfoque div.botones {
+    display: none;
+  }
+
+  div.seccion h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
 }

@@ -38,15 +38,45 @@ html {
 }
 
 /*Estilos Generales*/
-div.imagen {
-  position: relative;
+div.imagen img {
+  display: block;
   width: 100%;
-  overflow: hidden;
+  object-fit: cover;
 }
 
 div.seccion {
   width: 100%;
-  padding: 60px 20px;
+  height: auto;
   background-color: black;
   color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  padding: 30px 30px;
+  gap: 20px 0px;
+}
+
+div.seccion h4,
+div.seccion h3 {
+  font-family: "f-bebas", sans-serif;
+  font-size: var(--fs-titulo);
+  font-weight: bold;
+}
+div.seccion p {
+  font-size: var(--fs-parrafos);
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+h3.punto::after {
+  content: ".";
+  margin: 0px 10px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
 }
