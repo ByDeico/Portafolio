@@ -1,0 +1,49 @@
+div.imagen {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+div.imagen.presentacion img {
+  display: absolute;
+  width: 100%;
+  max-height: 800px;
+  min-height: 400px;
+  object-fit: cover;
+}
+
+div.imagen.presentacion div:nth-child(2) {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 12px;
+  overflow: visible;
+
+  /* suaviza/ difumina el fondo detrás del panel (Chrome / Safari) */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  /* resplandor difuminado en los bordes */
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.6), inset 0 0 12px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+div.imagen.presentacion div:nth-child(3) {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h2.instagram a,
+h2.behance a {
+  color: black;
+  text-decoration: none;
+
+  display: flex;
+}
+
+/*Textos internos*/

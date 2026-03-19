@@ -10,6 +10,14 @@ html {
 :root {
   /* Definimos el degradado una sola vez para que sea fácil de cambiar*/
   --bg-gradient: linear-gradient(135deg, #f8d877, #eb9c70, #df636a, #d32563);
+
+  --fs-titulo: 8.75rem;
+  --fs-titulo-punto: 6.75rem;
+  --fs-texto-portada: 1.5rem; /**/
+  --fs-botones-portada: 0.875rem;
+
+  --fs-parrafos: 1rem;
+  --fs-botones-hover: 0.975rem;
 }
 
 /*Font de Archive Para Info*/

@@ -1,9 +1,5 @@
 /* Ajustes para dispositivos pequeños */
 @media (max-width: 768px) {
-  div.imagen-contenedor {
-    width: 100vw;
-  }
-
   div.perfil-profesional {
     width: 100vw;
     flex-wrap: wrap;
