@@ -14,7 +14,9 @@ body > nav {
   -webkit-backdrop-filter: blur(8px);
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease;
   will-change: transform, opacity;
 }
 
@@ -69,7 +71,7 @@ nav .nav-botones {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 100%;
+  height: 50px;
 }
 
 nav .nav-botones a {
@@ -87,5 +89,5 @@ nav .nav-botones a {
 }
 
 nav .nav-botones a:hover {
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(219, 219, 219);
 }
