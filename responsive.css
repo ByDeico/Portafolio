@@ -1,0 +1,22 @@
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  div.imagen-contenedor {
+    width: 100vw;
+  }
+
+  div.perfil-profesional {
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+  div.perfil-profesional div.seccion-botones a {
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  div.perfil-profesional h4 {
+    font-size: 6rem;
+  }
+}
+
+/* Ajustes para dispositivos medianos */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
