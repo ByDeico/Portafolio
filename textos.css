@@ -25,6 +25,7 @@
 .texto-encima.dg1 {
   bottom: 30px;
   left: 20px;
+  padding-left: 20px;
 }
 .texto-encima.dg2 {
   font-size: 0.875rem;
