@@ -45,3 +45,13 @@ footer div.final p {
   max-width: 800px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  footer div.seccion h3 {
+    font-size: 2rem;
+    line-height: 120px;
+  }
+  footer div.seccion h4 {
+    font-size: 1.5rem;
+  }
+}
