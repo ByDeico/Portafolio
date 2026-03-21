@@ -51,9 +51,8 @@ div.seccion {
   color: white;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-around;
 
   padding: 30px 30px;
