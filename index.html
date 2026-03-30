@@ -1,20 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio byDeico</title>
-    <link rel="stylesheet" href="visual.css" />
-    <link rel="stylesheet" href="imagenes.css" />
-    <link rel="stylesheet" href="botones.css" />
-    <link rel="stylesheet" href="animaciones.css" />
-    <link rel="stylesheet" href="textos.css" />
-    <link rel="stylesheet" href="botones.css" />
-    <link rel="stylesheet" href="iconos/linkicon.css" />
-    <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <title>Portafolio By Deico</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/presentacion.css" />
+    <link rel="stylesheet" href="./css/mi-enfoque.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
+    <!--Barra de navegacion-->
     <nav class="nav-hidden">
       <div class="nav-deico">
         <svg
@@ -53,12 +52,16 @@
         </svg>
       </div>
       <div class="nav-botones">
-        <a href="#identidadvisualv">Identidad Visual</a>
-        <a href="#socialmediav">Social Media</a>
-        <a href="#papeleriav">Papeleria</a>
-        <a href="#overlaysv">Overlays</a>
-        <a href="#ilustracionv">Ilustración</a>
-        <a href="#procesocreativov">Proceso Creativo</a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-dropdown">Servicios</label>
+        <div class="nav-links">
+          <a href="#identidadvisualv">Identidad Visual</a>
+          <a href="#socialmediav">Social Media</a>
+          <a href="#papeleriav">Papeleria</a>
+          <a href="#overlaysv">Overlays</a>
+          <a href="#ilustracionv">Ilustración</a>
+          <a href="#procesocreativov">Proceso Creativo</a>
+        </div>
       </div>
       <div class="nav-logos">
         <a href="https://www.behance.net/ByDeico" target="_blank">
@@ -139,21 +142,19 @@
         </a>
       </div>
     </nav>
-    <div class="imagen-contenedor">
-      <!--Imagen de Portada, link de Behance, y texto-->
-      <img class="portada-imagen" src="assets/Imagenes/portada.png" alt="Potada Portafolio" />
-      <div class="texto-encima dg1">
-        <!--Subtitulo del Nombre-->
+
+    <!--Imagen Presentacion-->
+    <div class="imagen presentacion">
+      <img src="assets/Imagenes/portada.png" alt="Potada Portafolio" />
+
+      <!--Textos superpuestos-->
+      <div>
         <h2>Presentación Creativa</h2>
-      </div>
-      <div class="texto-encima dg2">
-        <!--Mi Nombre-->
         <h2>Francisco Armando Pimentel</h2>
       </div>
-      <div class="texto-encima dg3">
-        <!--Boton de Behance-->
-        <h2>
-          <a class="lb" href="https://www.behance.net/ByDeico" target="_blank">
+      <div>
+        <h2 class="behance">
+          <a href="https://www.behance.net/ByDeico" target="_blank">
             <div>
               <svg
                 width="24"
@@ -179,11 +180,8 @@
             <p>Behance</p>
           </a>
         </h2>
-      </div>
-      <div class="texto-encima dg4">
-        <!--Boton de IG-->
-        <h2>
-          <a class="li" href="https://www.instagram.com/bydeico/" target="_blank">
+        <h2 class="instagram">
+          <a href="https://www.instagram.com/bydeico/" target="_blank">
             <div>
               <svg
                 width="20"
@@ -216,11 +214,12 @@
       </div>
     </div>
 
-    <div class="perfil-profesional">
-      <!--Aqui va a que me dedico-->
-      <div class="infop">
-        <h4 class="stitulos">Mi Enfoque</h4>
-        <p class="infopp">
+    <!--Seccion 1: Mi enfoque-->
+    <div class="seccion mi-enfoque">
+      <div class="texto">
+        <h4>Mi</h4>
+        <h4>Enfoque</h4>
+        <p>
           ¡Hola! En esta sección te comparto un vistazo de todos mis servicios como diseñador
           gráfico. Soy una persona en constante aprendizaje; me apasiona aprender nuevas habilidades
           y perfeccionar las que ya tengo para ofrecer los mejores resultados. Por ahora, este es mi
@@ -228,104 +227,109 @@
           menú de servicios.
         </p>
       </div>
-      <div class="seccion-botones">
-        <div class="mask-btn">
-          <a class="botonb" href="#identidadvisualv">Identidad Visual</a>
-          <a class="botonb" href="#socialmediav">Social Media</a>
-          <a class="botonb" href="#papeleriav">Papeleria</a>
+      <div class="botones">
+        <div>
+          <a href="#identidadvisualv">Identidad Visual</a>
+          <a href="#socialmediav">Social Media</a>
+          <a href="#papeleriav">Papeleria</a>
         </div>
-        <div class="mask-btn">
-          <a class="botonb" href="#overlaysv">Overlays</a>
-          <a class="botonb" href="#ilustracionv">Ilustración</a>
-          <a class="botonb" href="#procesocreativov">Proceso Creativo</a>
+        <div>
+          <a href="#overlaysv">Overlays</a>
+          <a href="#ilustracionv">Ilustración</a>
+          <a href="#procesocreativov">Proceso Creativo</a>
         </div>
       </div>
     </div>
-    <div class="imagen-contenedor" id="sobremi">
-      <!--Aqui ira la imagen sobre mi-->
-      <img src="assets/Imagenes/sobremi.png" alt="About Me" />
+
+    <!--Imagen 1: Sobre mi-->
+    <div class="imagen">
+      <img src="./assets/Imagenes/sobremi.png" alt="Sobre mí" />
     </div>
 
-    <div class="titulo" id="identidadvisualv">
-      <!--Titulo Identidad Visual-->
-      <h3>Identidad Visual</h3>
-    </div>
-    <div class="imagen-contenedor">
-      <!--Imagen de Mockups y varios logos-->
-      <img src="assets/Imagenes/branding.png" alt="Mockups" />
+    <!--Seccion 2: Identidad visual-->
+    <div class="seccion" id="identidadvisualv">
+      <h3 class="punto">Identidad Visual</h3>
     </div>
 
-    <div class="titulo" id="socialmediav">
-      <!--Titulo Social Media-->
-      <h3 class="titulos">Social Media</h3>
-    </div>
-    <div class="imagen-contenedor">
-      <!--Imagen de Posts-->
-      <img src="assets/Imagenes/socialmedia.png" alt="Muestra de Posts" />
+    <!--Imagen 2: Identidad visual-->
+    <div class="imagen">
+      <img src="./assets/Imagenes/branding.png" alt="Identidad visual" />
     </div>
 
-    <div class="titulo" id="papeleriav">
-      <!--Titulo Papeleria-->
-      <h3 class="titulos">Papelería</h3>
-    </div>
-    <div class="imagen-contenedor">
-      <!--Imagen de Papeleria-->
-      <img src="assets/Imagenes/papeleria.png" alt="Muestra de Papeleria" />
+    <!--Seccion 3: Social media-->
+    <div class="seccion" id="socialmediav">
+      <h3 class="punto">Social Media</h3>
     </div>
 
-    <!--Titulo Ilustracion-->
-    <div class="titulo" id="ilustracionv">
-      <h3 class="titulos">Ilustración</h3>
-    </div>
-    <div class="imagen-contenedor">
-      <!--Imagen de Ilustración-->
-      <img src="assets/Imagenes/ilustracion.png" alt="Muestra de Ilustracion" />
+    <!--Imagen 3: Social media-->
+    <div class="imagen">
+      <img src="./assets/Imagenes/socialmedia.png" alt="Social media" />
     </div>
 
-    <!--Titulo Proceso Creativo-->
-    <div class="titulo" id="procesocreativov">
-      <h3 class="titulos">Proceso Creativo</h3>
-    </div>
-    <div class="imagen-contenedor">
-      <!--Imagen de Proceso Creativo-->
-      <img src="assets/Imagenes/proceso.png" alt="Muestra de Proceso Creativo" />
+    <!--Seccion 4: Papeleria-->
+    <div class="seccion" id="papeleriav">
+      <h3 class="punto">Papeleria</h3>
     </div>
 
-    <!--Titulo Proceso Creativo-->
-    <div class="titulof">
-      <h3>Gracias por ver mi trabajo</h3>
-      <p>Puedes contactarme sin compromiso</p>
+    <!--Imagen 4: Papeleria-->
+    <div class="imagen">
+      <img src="./assets/Imagenes/papeleria.png" alt="Papeleria" />
     </div>
 
-    <!--Seccion de Contactos-->
-    <div class="contacto">
-      <div class="iconos">
-        <a href="https://www.behance.net/ByDeico" target="_blank">
-          <svg
-            width="30px"
-            height="30px"
-            viewBox="0 0 1024 1024"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon"
-          >
-            <path
-              d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM598.5 350.9h138.4v33.7H598.5v-33.7zM512 628.8a89.52 89.52 0 0 1-27 31c-11.8 8.2-24.9 14.2-38.8 17.7a167.4 167.4 0 0 1-44.6 5.7H236V342.1h161c16.3 0 31.1 1.5 44.6 4.3 13.4 2.8 24.8 7.6 34.4 14.1 9.5 6.5 17 15.2 22.3 26 5.2 10.7 7.9 24.1 7.9 40 0 17.2-3.9 31.4-11.7 42.9-7.9 11.5-19.3 20.8-34.8 28.1 21.1 6 36.6 16.7 46.8 31.7 10.4 15.2 15.5 33.4 15.5 54.8 0 17.4-3.3 32.3-10 44.8zM790.8 576H612.4c0 19.4 6.7 38 16.8 48 10.2 9.9 24.8 14.9 43.9 14.9 13.8 0 25.5-3.5 35.5-10.4 9.9-6.9 15.9-14.2 18.1-21.8h59.8c-9.6 29.7-24.2 50.9-44 63.7-19.6 12.8-43.6 19.2-71.5 19.2-19.5 0-37-3.2-52.7-9.3-15.1-5.9-28.7-14.9-39.9-26.5a121.2 121.2 0 0 1-25.1-41.2c-6.1-16.9-9.1-34.7-8.9-52.6 0-18.5 3.1-35.7 9.1-51.7 11.5-31.1 35.4-56 65.9-68.9 16.3-6.8 33.8-10.2 51.5-10 21 0 39.2 4 55 12.2a111.6 111.6 0 0 1 38.6 32.8c10.1 13.7 17.2 29.3 21.7 46.9 4.3 17.3 5.8 35.5 4.6 54.7zm-122-95.6c-10.8 0-19.9 1.9-26.9 5.6-7 3.7-12.8 8.3-17.2 13.6a48.4 48.4 0 0 0-9.1 17.4c-1.6 5.3-2.7 10.7-3.1 16.2H723c-1.6-17.3-7.6-30.1-15.6-39.1-8.4-8.9-21.9-13.7-38.6-13.7zm-248.5-10.1c8.7-6.3 12.9-16.7 12.9-31 .3-6.8-1.1-13.5-4.1-19.6-2.7-4.9-6.7-9-11.6-11.9a44.8 44.8 0 0 0-16.6-6c-6.4-1.2-12.9-1.8-19.3-1.7h-70.3v79.7h76.1c13.1.1 24.2-3.1 32.9-9.5zm11.8 72c-9.8-7.5-22.9-11.2-39.2-11.2h-81.8v94h80.2c7.5 0 14.4-.7 21.1-2.1s12.7-3.8 17.8-7.2c5.1-3.3 9.2-7.8 12.3-13.6 3-5.8 4.5-13.2 4.5-22.1 0-17.7-5-30.2-14.9-37.8z"
-            />
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/bydeico/" target="_blank">
-          <svg
-            height="24px"
-            width="24px"
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 382 382"
-            xml:space="preserve"
-          >
-            <path
-              d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+    <!--Seccion 5: Ilustración-->
+    <div class="seccion" id="ilustracionv">
+      <h3 class="punto">Ilustración</h3>
+    </div>
+
+    <!--Imagen 5: Ilustración-->
+    <div class="imagen">
+      <img src="./assets/Imagenes/ilustracion.png" alt="Ilustración" />
+    </div>
+
+    <!--Seccion 6: Proceso creativo-->
+    <div class="seccion" id="procesocreativov">
+      <h3 class="punto">Proceso creativo</h3>
+    </div>
+
+    <!--Imagen 6: Proceso creativo-->
+    <div class="imagen">
+      <img src="./assets/Imagenes/proceso.png" alt="Proceso creativo" />
+    </div>
+
+    <!--Fin del contenido-->
+    <footer>
+      <div class="seccion">
+        <h3>Gracias por ver mi trabajo</h3>
+        <h4>Puedes contactarme sin compromiso</h4>
+      </div>
+      <div class="final">
+        <div class="iconos">
+          <a href="https://www.behance.net/ByDeico" target="_blank">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
+            >
+              <path
+                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM598.5 350.9h138.4v33.7H598.5v-33.7zM512 628.8a89.52 89.52 0 0 1-27 31c-11.8 8.2-24.9 14.2-38.8 17.7a167.4 167.4 0 0 1-44.6 5.7H236V342.1h161c16.3 0 31.1 1.5 44.6 4.3 13.4 2.8 24.8 7.6 34.4 14.1 9.5 6.5 17 15.2 22.3 26 5.2 10.7 7.9 24.1 7.9 40 0 17.2-3.9 31.4-11.7 42.9-7.9 11.5-19.3 20.8-34.8 28.1 21.1 6 36.6 16.7 46.8 31.7 10.4 15.2 15.5 33.4 15.5 54.8 0 17.4-3.3 32.3-10 44.8zM790.8 576H612.4c0 19.4 6.7 38 16.8 48 10.2 9.9 24.8 14.9 43.9 14.9 13.8 0 25.5-3.5 35.5-10.4 9.9-6.9 15.9-14.2 18.1-21.8h59.8c-9.6 29.7-24.2 50.9-44 63.7-19.6 12.8-43.6 19.2-71.5 19.2-19.5 0-37-3.2-52.7-9.3-15.1-5.9-28.7-14.9-39.9-26.5a121.2 121.2 0 0 1-25.1-41.2c-6.1-16.9-9.1-34.7-8.9-52.6 0-18.5 3.1-35.7 9.1-51.7 11.5-31.1 35.4-56 65.9-68.9 16.3-6.8 33.8-10.2 51.5-10 21 0 39.2 4 55 12.2a111.6 111.6 0 0 1 38.6 32.8c10.1 13.7 17.2 29.3 21.7 46.9 4.3 17.3 5.8 35.5 4.6 54.7zm-122-95.6c-10.8 0-19.9 1.9-26.9 5.6-7 3.7-12.8 8.3-17.2 13.6a48.4 48.4 0 0 0-9.1 17.4c-1.6 5.3-2.7 10.7-3.1 16.2H723c-1.6-17.3-7.6-30.1-15.6-39.1-8.4-8.9-21.9-13.7-38.6-13.7zm-248.5-10.1c8.7-6.3 12.9-16.7 12.9-31 .3-6.8-1.1-13.5-4.1-19.6-2.7-4.9-6.7-9-11.6-11.9a44.8 44.8 0 0 0-16.6-6c-6.4-1.2-12.9-1.8-19.3-1.7h-70.3v79.7h76.1c13.1.1 24.2-3.1 32.9-9.5zm11.8 72c-9.8-7.5-22.9-11.2-39.2-11.2h-81.8v94h80.2c7.5 0 14.4-.7 21.1-2.1s12.7-3.8 17.8-7.2c5.1-3.3 9.2-7.8 12.3-13.6 3-5.8 4.5-13.2 4.5-22.1 0-17.7-5-30.2-14.9-37.8z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/bydeico/" target="_blank">
+            <svg
+              height="24px"
+              width="24px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 382 382"
+              xml:space="preserve"
+            >
+              <path
+                d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
 	C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
 	H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
 	c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
@@ -334,50 +338,49 @@
 	c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
 	c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
 	L341.91,330.654L341.91,330.654z"
-            />
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/bydeico/" target="_blank">
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
-            />
-            <path
-              d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
-            />
-          </svg>
-        </a>
-        <a href="https://wa.me/584142463942" target="_blank">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-          <svg
-            width="24px"
-            height="24px"
-            viewBox="0 0 32 32"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>whatsapp</title>
-            <path
-              d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"
-            ></path>
-          </svg>
-        </a>
-      </div>
-      <div class="texto">
+              />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/bydeico/" target="_blank">
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+              />
+              <path
+                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+              />
+            </svg>
+          </a>
+          <a href="https://wa.me/584142463942" target="_blank">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg
+              width="24px"
+              height="24px"
+              viewBox="0 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>whatsapp</title>
+              <path
+                d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"
+              ></path>
+            </svg>
+          </a>
+        </div>
         <p>
           La diferencia entre un buen proyecto y uno excelente radica en la ejecución y el criterio
           de calidad detrás de cada pieza visual. Mi portafolio es el reflejo de una experiencia que
@@ -385,24 +388,23 @@
           y marcas que entiendan el diseño como una inversión necesaria para el crecimiento de la
           misma.
         </p>
-      </div>
-      <div class="logo">
-        <svg
-          class="nav-svg"
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 1080 1080"
-          style="enable-background: new 0 0 1080 1080"
-          xml:space="preserve"
-        >
-          <g>
-            <path
-              class="st0"
-              d="M658.8,548.85c21.11,11.29,25.69,39.57,9.22,56.95l-82.76,87.3c-14.52,15.32-39.01,15.05-53.19-0.58l-6.9-7.65
+        <div class="logo-deico">
+          <svg
+            class="nav-svg"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1080 1080"
+            style="enable-background: new 0 0 1080 1080"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                class="st0"
+                d="M658.8,548.85c21.11,11.29,25.69,39.57,9.22,56.95l-82.76,87.3c-14.52,15.32-39.01,15.05-53.19-0.58l-6.9-7.65
 		c-13.64-15.13-17.04-36.9-8.66-55.47l8.65-19.18l-19.99,12.58c-13.68,8.61-31.5,6.56-42.88-4.92l-6.21-6.27
 		c-14.33-14.47-6.64-33.72,4.46-50.8l11.7-13.65c-39.26,21.46-74.61-4.15-74.61-4.15c15.6,78.03-81.68,4.39-81.68,4.39
 		c79.04,270.44-208.7,472.46-222.36,481.86C473.53,768.31,545.64,863.8,545.64,863.8c-35.11-66.32-5.85-98.51-5.85-98.51
@@ -418,14 +420,13 @@
 		c-10.6-3.72-18.03-13.27-19.16-24.45C365.12,278.28,299,218.42,299,218.42l205.27,116.43C517.86,342.56,520.5,361.03,509.62,372.24
 		z M504.34,745.15L299.07,861.58c0,0,66.12-59.87,79.48-192.43c1.13-11.18,8.56-20.73,19.16-24.45v0
 		c23.11-8.11,48.82-2.05,65.87,15.53l46.11,47.52C520.58,718.97,517.93,737.44,504.34,745.15z"
-            />
-          </g>
-        </svg>
-      </div>
-      <div class="firma">
+              />
+            </g>
+          </svg>
+        </div>
         <p>Francisco Pimentel | ByDeico</p>
       </div>
-    </div>
-    <script src="nav-visibility.js"></script>
+    </footer>
+    <script src="./js/nav-visibility.js"></script>
   </body>
 </html>

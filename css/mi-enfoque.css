@@ -1,0 +1,66 @@
+/*texto*/
+div.mi-enfoque {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 30px;
+  gap: 20px 0px;
+}
+
+div.mi-enfoque h4 {
+  line-height: 0.8;
+}
+
+/*botones*/
+div.mi-enfoque div.botones {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+div.mi-enfoque div.botones div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+div.mi-enfoque div.botones a {
+  font-family: "f-bebas", sans-serif;
+  font-size: var(--fs-botones);
+  text-align: center;
+  text-decoration: none;
+
+  color: black;
+  background: linear-gradient(white);
+  padding: 0px 40px;
+  border-radius: 100px;
+  transition:
+    transform 0.2s ease,
+    color 0.5s ease,
+    background-color 0.5s ease;
+}
+
+div.mi-enfoque div.botones a:hover {
+  transform: scale(1.05);
+  color: white;
+  background: var(--bg-gradient);
+}
+
+@media screen and (max-width: 768px) {
+  div.mi-enfoque .texto h4 {
+    font-size: 5rem;
+  }
+  div.mi-enfoque .texto p {
+    font-size: 0.8rem;
+  }
+  div.mi-enfoque div.botones {
+    display: none;
+  }
+
+  div.seccion h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}

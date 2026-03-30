@@ -1,0 +1,57 @@
+footer div.seccion {
+  gap: 0;
+}
+
+footer div.seccion h3 {
+  font-size: calc(var(--fs-titulo) / 1.25);
+  line-height: 120px;
+}
+footer div.seccion h4 {
+  font-size: calc(var(--fs-titulo) / 2);
+}
+
+footer div.final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer div.final div.iconos {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+footer div.final a {
+  text-decoration: none;
+  color: black;
+  fill: black;
+}
+
+footer div.logo-deico svg {
+  fill: black;
+  width: 100px;
+  height: auto;
+}
+
+footer div.final svg {
+  fill: black;
+}
+
+footer div.final p {
+  max-width: 800px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  footer div.seccion h3 {
+    font-size: 2rem;
+    line-height: 120px;
+  }
+  footer div.seccion h4 {
+    font-size: 1.5rem;
+  }
+}
